@@ -1,0 +1,27 @@
+1341. Movie Rating
+Table: Movies
++---------------+---------+
+| Column Name   | Type    |
++---------------+---------+
+| movie_id      | int     |
+| title         | varchar |
++---------------+---------+
+movie_id is the primary key (column with unique values) for this table.
+title is the name of the movie.
+
+
+>># Write your MySQL query statement below
+(SELECT name AS results
+FROM MovieRating JOIN Users USING(user_id)
+GROUP BY name
+ORDER BY COUNT(*) DESC, name
+LIMIT 1)
+
+UNION ALL
+
+(SELECT title AS results
+FROM MovieRating JOIN Movies USING(movie_id)
+WHERE EXTRACT(YEAR_MONTH FROM created_at) = 202002
+GROUP BY title
+ORDER BY AVG(rating) DESC, title
+LIMIT 1);
