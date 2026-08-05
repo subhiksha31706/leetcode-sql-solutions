@@ -2,7 +2,7 @@
 
 A comprehensive collection of SQL interview questions and solutions covering basic, intermediate, and advanced concepts. Includes explanations, best practices, and real-world SQL problems for Data Engineering and Software Development interviews.This repository serves as a personal learning portfolio, documenting my progress through SQL practice across multiple platforms. Each solution is written with an emphasis on readability, correctness, and best practices.
 
-Objectives
+Objectives:-
 
 Develop a strong foundation in SQL.
 Practice solving real-world database problems.
